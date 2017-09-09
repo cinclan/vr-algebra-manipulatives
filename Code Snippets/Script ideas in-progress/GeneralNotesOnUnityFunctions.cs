@@ -16,12 +16,12 @@ public class GeneralNotesOnUnityFunctions : MonoBehaviour {
     }
 
 	void Start () {
-		//called before any frames are execuited
+	//called before any frames are execuited
         //variable loading
 	}
 	
 	void Update () {
-		//most game code
+	//most game code
         //called per frame
         //frequent use of Time.deltaTime
 	}
