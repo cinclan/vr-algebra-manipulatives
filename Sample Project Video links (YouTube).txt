@@ -1,0 +1,10 @@
+Color assignment && cube instantiation at recorded places:
+Link: https://www.youtube.com/watch?v=MForQmJJo_M
+---
+Instantiation instant vs delayed:
+Link: https://www.youtube.com/watch?v=m9y_E2DtFfc
+---
+Transform based coloring:
+Link: https://www.youtube.com/watch?v=0m9riC_iUoE
+
+Note: links to relevant code (with comments) included in each video link
