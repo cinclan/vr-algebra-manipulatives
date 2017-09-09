@@ -1,0 +1,59 @@
+//brainstorming symbolic manipulation might work --> it didn't lead anywhere useful
+
+EQ_top.right.matrix = EQ_top.left.matrix;
+EQ_bottom.right.matrix = EQ_top.left.matrix
+
+ //result = evaluate(expressionString1) --> WriteLine(result) print.complete(steps) //to two matrices
+        //apply operator rules to matrix results
+
+        //parser.OperatorList = new List<string>() { "*", "/", "+", "-", "=", "(", ")"};
+        //expressionString1 = new expressionString { "a" + ('b' + 'c') / 'x' = 'y' };
+
+        //initialize table1 and table2...
+        //generate separate top and bottom matricies for each table
+        //populate tables with variable blocks representing expressionString
+        //the need for each step to be printed is so that if a user makes a change that isn't valid (or is valid), it can be compared)
+		//each table has only 6 possible placements on the top and bottom.
+        //table1.top_matrix1:    |a b c x 0 0 0 0 0 0| a + (b+c)/x 
+        //table1.bottom_matrix1: |a b c x 0 0 0 0 0 0|
+        //table2.top_matrix2:    |y 0 0 0 0 0 0 0 0 0| 
+        //table2.bottom_matrix2: |y 0 0 0 0 0 0 0 0 0| 
+
+        //step 2(subtract a on both sides, a+(b+c)/x - a = y - a)
+        //table1.top_matrix1:    |0 b c x 0 0 0 0 0 0|
+        //table1.bottom_matrix1: |0 b c x 0 0 0 0 0 0| 
+        //table2.top_matrix2:    |y a 0 0 0 0 0 0 0 0|
+        //table2.bottom_matrix2: |y a 0 0 0 0 0 0 0 0|
+
+        //step 3(shift over matrix letters to the left)
+        //table1.top_matrix1:    |b c x 0 0 0 0 0 0 0|
+        //table1.bottom_matrix1: |b c x 0 0 0 0 0 0 0|  
+        //table2.top_matrix2:    |y a 0 0 0 0 0 0 0 0|
+        //table2.bottom_matrix2: |y a 0 0 0 0 0 0 0 0|
+
+
+        //step 4((b+c)/x = y - a)
+        //table1.top_matrix1:    |b c x 0 0 0 0 0 0 0| 
+        //table1.bottom_matrix1: |b c x 0 0 0 0 0 0 0| 
+        //table2.top_matrix2:    |y a 0 0 0 0 0 0 0 0|
+        //table2.bottom_matrix2: |y a 0 0 0 0 0 0 0 0|
+
+        //step 4(multiply both sides by x, x*((b+c)/x) = x(y-a) = b + c = xy - ax)
+        //table1.top_matrix1:    |b c 0 0 0 0 0 0 0 0| 
+        //table1.bottom_matrix1: |b c 0 0 0 0 0 0 0 0| 
+        //table2.top_matrix2:    |y x a x 0 0 0 0 0 0|
+        //table2.bottom_matrix2: |y x a x 0 0 0 0 0 0|
+
+
+        //step 5(subtract c from both sides, b+c 0 c = xy - ax - c)
+        //table1.top_matrix1:    |b 0 0 0 0 0 0 0 0 0|
+        //table1.bottom_matrix1: |b 0 0 0 0 0 0 0 0 0|
+        //table2.top_matrix2:    |y x a x c 0 0 0 0 0|
+        //table2.bottom_matrix2: |y x a x c 0 0 0 0 0|
+        //private method to compare to actual gameboard object placement (+/- to score if correct, incorrect step, audible cue (correct/incorrect) if step is checked by user and - to score if > 1,
+
+        //step 6(compare final result to user final matrix)
+        //table1.top_matrix1:    |b 0 0 0 0 0 0 0 0 0|
+        //table1.bottom_matrix1: |b 0 0 0 0 0 0 0 0 0|
+        //table2.top_matrix2:    |y x a x c 0 0 0 0 0|
+        //table2.bottom_matrix2: |y x a x c 0 0 0 0 0|
