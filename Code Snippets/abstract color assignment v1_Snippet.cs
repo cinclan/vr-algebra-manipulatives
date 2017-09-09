@@ -24,7 +24,7 @@ public class SampleAbstractColorAssignment : MonoBehaviour {
             {
                 Color c = colorList[Random.Range(0, colorList.Count)]; //user defined range of custom colors defaults to 0 unless changed in inspecttor
                 //Force alpha value of Color c to maximum value (fully opaque).
-                c.a = 255;
+                c.a = 255; //The red, green and blue use 8 bits each, which have integer values from 0 to 255
 
                 colorableObject.GetComponent<Renderer>().material.color = c; //gets list of custom colors chosen by user (they will all be black unless individually modified) and applies them to each new instantiable cube object
             }
