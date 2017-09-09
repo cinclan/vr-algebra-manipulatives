@@ -1,0 +1,9 @@
+This is to explain the functionality of the manipulative types:
+
+Default: just a default cube variable (ex: A, B,C,D,X,Y)
+
+Compressed multiplier frame: the result of a multiplication. A cube variable dragged over another will result in the target variable compressing within the multiplier (and the multiplier becoming transparent*)
+
+Highlight frame: the visual distinction that occurs when one uses the black circle button on the controller to lock onto multiple other variables and apply the properties of the locked-on variable.
+
+Transparent*: the result of a multiplication, the multiplied variable becomes transparent when dragged over another variable (if allowed within the confines of the problem.)
