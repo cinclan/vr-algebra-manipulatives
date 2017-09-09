@@ -1,0 +1,5 @@
+Cube Blocks are now .08 X .08 X .08 meters
+
+Cube Positive/Negative Indicators are .04 X .08 X .08 meters
+
+Scale other manipulative types accordingly
