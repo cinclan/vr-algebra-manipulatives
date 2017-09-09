@@ -1,0 +1,24 @@
+Project Bibliography for ILC:
+Cosmo Inclan, 9/9/17
+//
+Software Used:
+//
+Unity3D – Multi-platform Game Development Engine
+Steam VR– store (app)
+Google SketchUp Pro 2017 
+Maya 2018 – Student Edition
+Notepad++
+//
+Literature and Video:
+//
+Biagioli, Adrian . “Vive-Teleporter.” GitHub, 13 Jan. 2017, github.com/Flafla2/Vive-Teleporter. Accessed 6 June 2017. A framework for Unity3D that automatically generates teleporter boundaries and facilitates the teleporter mechanic, similarly to Valve's "The Lab." Aids with reducing nausea and fatigue.
+Hejlsberg , Anders , et al. “Introduction.” The C# Programming Language, 2nd ed., Pearson Education, pp. 4–42. Microsoft .Net Development Series. Chapter goes over basic C# syntax. I focused on switch, and break statements, as well as declaration of classes and learning the accessibility syntax for declaring public variables (so they could later be accessed via the Unity inspector)
+Hejlsberg , Anders , et al. “Introduction.” The C# Programming Language, 2nd ed., Pearson Education, pp. 539–547. Microsoft .Net Development Series. Chapter goes over basic C# syntax. I focused on using the IEnum yield type and enumerator objects (an iterator block that produces a sequence of values, all of the same type).
+“ProBuilder Basic.” Asset Store, ProCore3D, 11 Dec. 2013, www.assetstore.unity3d.com/en/#!/content/11919. Accessed 9 Sept. 2017. Rapidly build and test prototype geometry in Unity, with a focus on simple, speedy construction. This is the core of ProBuilder Advanced, cut down to essentials, and available free for all projects.
+Ruegg, Christoph . symbolics.mathdotnet.com/. Accessed 8 Sept. 2017. Math.NET Symbolics is a basic opensource computer algebra library for .Net, Silverlight and Mono written entirely in F#. This project does not aim to become a full computer algebra system. If you need such a system, have a look at Axiom or Maxima instead, or for proprietary commercial solutions Maple, Mathematica or Wolfram Alpha.
+“SteamVR Plugin.” Asset Store, Valve Corporation, 29 June 2017, www.assetstore.unity3d.com/en/#!/content/32647. Accessed 9 Sept. 2017. The SteamVR SDK allows developers to target a single interface that will work with all major virtual reality headsets from seated to room scale experiences. Additionally, it provides access to tracked controllers, chaperoning, render models for tracked devices. SteamVR's compositor allows you to preview your content in VR using Unity's play mode, while leaving the normal game window to act as your companion screen on the main monitor.
+Technologies, Unity. “Unity User Manual (2017.1).” Unity - Manual: Unity User Manual (2017.1), Unity Technologies, 8 June 2005, docs.unity3d.com/Manual/index.html. Accessed 9 Sept. 2017. The Unity User Manual helps you learn how to use the Unity Editor and its associated services. You can read it from start to finish, or use it as a reference. Covering topics such as virtual reality implementation, scripting, working in unity, and more.
+“The Lab Renderer.” Asset Store, Valve Corporation, 1 June 2016, www.assetstore.unity3d.com/en/#!/content/63141. Accessed 9 Sept. 2017. This is the set of scripts and shaders that drove rendering in The Lab. It is a forward renderer with support for up to 18 dynamic shadowing lights in a single pass with MSAA enabled, and it included the Adaptive Quality system that dynamically adjusts rendering resolution to maintain framerate in VR. 
+AbhiDemkeys. YouTube, YouTube, 20 Dec. 2015, www.youtube.com/watch?v=CTRKXR09ivw&list=PLNW2L7zpg5BGtMDgII9rzzD5iG1ZppMg2&index=5. Accessed 9 Sept. 2017. General tips and tricks on using Unity camera, rotation, snapping tools, as well as hierarchy navigation
+YouTube, Renaissance Coders , 7 Nov. 2016, www.youtube.com/watch?v=Osf1LUFGSvg&list=PL4CCSwmU04MiCnps1DRmwIEEH7gP9X3qq. Accessed 9 Sept. 2017. Channel description: "Learn the skills necessary to become a successful developer. We offer training in C#, Javascript, Unity3D, and more. Renaissance Coders is run by two guys out of Atlanta, Darren and Jared. Darren has 5 years of experience using Unity3D and C#. He is pursuing a Masters in Computer Science while he leads a small research team at Kennesaw State University. He has 2 years of experience tutoring college students in programming, and 2 years of experience teaching Unity3D online. He has 1 year of experience working at a virtual reality company developing clinical psychology applications. Jared has 4 years of experience using Unity3D and C#, as well as 9 years as a software developer and 2 years with the Unreal Engine and C . Jared has a Bachelor's degree in Game Programming, has participated in several coding challenges and Game Jams, and is driven to create amazing content for the game development community."
+
