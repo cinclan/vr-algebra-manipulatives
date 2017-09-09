@@ -1,0 +1,1 @@
+The manipulative cover object obscures the answer that the player should arrive at in order to solve the isolation problem presented, as efficiently as possible. Note: if their answer is correct, but not in the most efficient form, they will be informed via a prompt.
