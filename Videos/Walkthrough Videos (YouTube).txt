@@ -1,0 +1,14 @@
+Description: Early video walkthrough with v1 game table with 3D captions describing functionality of game-table buttons, solving for B (yellow cube var)
+Link: v1_1: https://www.youtube.com/watch?v=HUAsWvqNEpI
+---
+Description: Only minor changes since v1, mainy, modified how variables fractions simplify when reduced (they expand into full cubes)
+v1.2_1: https://www.youtube.com/watch?v=dtITpxxqnuU
+---
+Description: Now using cube variables only and new v5 game table. solving for B var.
+v5_1: https://www.youtube.com/watch?v=dpjNtgjW6Iw
+---
+Description: Now using v7 game table to solve for X var (the blue cube var).
+v7_2: https://www.youtube.com/watch?v=djWiiLsppew
+---
+Description:Corrected missing step (division by factored A-Y), however neglected to fill middle-table "equals" with green, denoting fully solved equalities (corrected by showing in static walkthrough screenshots in v7 folder).
+v7_2_CORRECTION: https://www.youtube.com/watch?v=TdAgWXlRNUQ
