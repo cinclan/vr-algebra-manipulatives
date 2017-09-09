@@ -10,7 +10,7 @@ C = GREEN
 X = LIGHTBLUE
 Y = DARKBLUE
 
-v# = table iteration, _1
+v# = table iteration
 
 _# = variable being solved for (1 = B (yellow cube), 2 = X (lightblue cube)
 
