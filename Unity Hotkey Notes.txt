@@ -1,0 +1,36 @@
+Unity Hotkeys:
+
+ALT + right MSButton (mouse moving in and out) = smooth zoom in/out
+
+ALT + left MSButton = rotate around focus
+
+ALT + middle mouse (or just middle mouse) = pan camera
+
+F = focus
+
+holding V = select vertex (moving at yellow square with left mouse lets you snap to any other vertex)
+
+Shift + V = vertex selection lock (until you press V again)
+
+Cntrl + D = duplicate
+
+E (on object) = rotation mode
+
+W (on object) = precise move mode
+
+Q = hand pan wmode
+
+Edit + snap settings = precise snap controls for translate, rotate, and scale tools
+
+Control + Shift + F (while main camera selected) = Align camera to see current view
+
+Control +  Alt + F (while object(s) selected) = Center objects in current view 
+
+Shift + F = Lock view to current object selected (so moving it will track) (note: you're not permanently locked, rotation breaks it)
+
+Shift + A (select all) + Control + Left-Arrow/Right-Arrow = Expand and collapse hierarchy
+Shift + Space = Max current scene
+
+Locking object/selection: Assign it to a new layer (look for "default" and either create a custom one or use one of the defaults, then go to layer-selector (top right "layers" and use the lock symbol to keep it from being selectable (until you unlock it).
+
+Control+Shift = Snap to face
