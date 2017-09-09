@@ -1,0 +1,23 @@
+<color assignment && cube instantiation at recorded places>
+Code: https://github.com/cinclan/vr-algebra-manipulatives/blob/master/Code%20Snippets/abstract%20color%20assignment%20v1_Snippet.cs
+Code: https://github.com/cinclan/vr-algebra-manipulatives/blob/master/Code%20Snippets/instantiation%20v2_Snippet..cs
+
+summary: 
+Sample project with color assignment example, resources.load example, and positioning example. I moved the sample Cube Prefab to a folder labeled "Resources", this enables the Resources.
+Thought process:
+This is essentially version 2 of the instant vs delayed instantiation code (below). The difference is that I added a custom color picker to differentiate the cubes. Unity does have some built in functions for addressing color, but I wanted to be selective because I'm still not sure yet how to randomize "pleasant" looking colors. This was useful practice for when I also need to address the functionality of the "randomize problem" button.
+----
+<instantiation - instant vs delayed>
+Code: https://github.com/cinclan/vr-algebra-manipulatives/blob/master/Code%20Snippets/instantiation%20v1_Snippet.cs
+summary:
+Sample project with scaled cubes added at 0,0,0; the script is attached to the table object. Added a public bool value in the script that switches between instant instantiation and delayed instantiation.
+Thought process:
+The code is meant to play around with instantiation and spawning in the manipulatives. The public var in the inspector servces to illustrate the aesthetic difference in instantaneous vs. progressive (slow) instantiation. For time and efficiency, instant-instantiation might make more sense, but I feel that an advanced option in a future main menu should be available depending on the player. But again, this only matters at the start.
+----
+<Transform based coloring>
+Code: https://github.com/cinclan/vr-algebra-manipulatives/blob/master/Code%20Snippets/movement%20color%20transform%20v1_Snippet.cs
+summary:
+The spacebar triggers movement (movement must be completed before it can be triggered again, which is indicated by cube color change). Demonstrates two things: color change on movement completioon, and smooth movement without using the Vector3.Lerp function. Not proximity based, instead it's based on conditional movement completion (goRight bool = true/false.)
+Thought process:
+The code utilizes a single primitive cube and my v-game-table mockups. It turns the cube from red to green as soon as it fully transforms horizontally into a new position (while a camera tracks it). The color change occurs only after 100% translation. I was playing with the idea of representing a literal change in CMYK color when transforming a variable from one table to the other (to represent a subtraction or additon), but this later appeared to be too confusing so I decided to keep a variable color and represent positive and negative relationships using physical bars (that would need to instantiate upon arrangement of variables, and transformation.)
+Script is attached/targeted to the main camera, all related values are visible if it's selected uring play mode.
