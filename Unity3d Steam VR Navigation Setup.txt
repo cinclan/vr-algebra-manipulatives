@@ -1,0 +1,40 @@
+Unity3D Steam VR Navigation Setup
+
+Preliminaries: 
+
+Unity3D Developtment environment: https://unity3d.com/get-unity/download
+Steam (app)
+Calibrated Gear VR
+
+Instructions:
+
+1) (Delete "Main Camera")
+2) Click on directional light --> add valve realtime light
+3) now go to Edit-> project settings -> quality -> disablef shadows (because valve lab renderer will handle all shadows)
+<<make sure you have no other vr extensions -- this just uses the vr toolkit>>
+4) now go to Tools --> ProBuilder Basic --> ProBuilder Basic Window --> dock it next to the Hierarchy tab
+5) Go to the ProBuilder Basic menu -->create a New Shape --> make a cube --> set dimensins to x:20, Y:1, z:20-->build cube
+6) Go to the hierarchy and double click the new cube/plane to center it in the view
+7) In the inspect, set the transform position to -10,0,+10 (so the eventual camera asset will be centered)
+8) Now go to the SteamVR folder in your Assets -> Go to Prefabs -> Drag the [CameraRig] asset into your hierarchy (it should spawn at the center of your cube/plane
+9) Remember to save
+10) Now go back to your Assets --> Vive-Teleporter-->Prefabs--> drag Navmesh component into your scene hierarchy
+11) Now find the Navigation tab (typically next to the inspector)
+12) Within the Navigation tab --> Bake --> Change Agent Radius to 0.1 so it's a little finer (by the way, this is what Unity uses so AI bots can navigate levels, BUT this Navmesh asset takes that Unity asset and uses it for VR teleporting so it's a bit of a hack, Unity may change this in the future, but for now, this is how it's done.)
+13) Now, go back to your hierarchy and click the Cube object --> go to the inspector and make sure it is set to static (navigation static is the most important so the cube doesn't walk around the scene when you do).
+14) Now click back on the Navmesh component and go to the Navigation tab --> click Bake (this will bake a navesh onto the static cube (to know where you can walk around)
+15) To get this information we have from the Navmesh to the teleporter asset --> go to the Navmesh inspector properties --> click "Update Navmesh Data" (takes the navmesh data and puts it onto the Asset)
+16) Now we're going to add the pointer asset to the scene hierarchy (you may get a number of immediate errors, but ignore them for the time being).
+17) Click on the inspector properties for the pointer and underneath the "Parabolic Pointer (Script)" settings, clock on the small circle next to the Nav Mesh target and select "Nav Mesh" from the menu that pops up (the errors should stop now)
+18) The final piece to the puzzle is the Vive teleporter component
+19) Go back to the scene hierarchy and select the [CameraRig] --> expand the Camera (head) table and select the Camera (eye) --> Component --> Vive Teleporter --> Vive Teleporter (to add a teleporter component)
+20) Now there are a number of variables to set before you can test your setup
+21) Go to the Camera (eye) inspector properties and scroll down until you see the "Teleport Vive (Script)" settings. Note how almost all the variable targets say "None," we need to click on each on and add it's appropriate target (i.e. Pointer --> Pointer, Origin Transform --> [CameraRig], Head Transform --> Camera [Head]
+21) Teleport fade can be left as 0.2, haptic click angle is the bump you'll feel in your controller when you move it up and down (the teleporter is an arc, make it steeper or flatter and every 10 degrees you'll feel a click)
+22) Lastly for the Navmesh target --> Navmesh, and for the fade material when prompted, search for "FadeBlack" in the popup and select it.
+23) Now maximize the Controllers --> set array to 2 --> then in the array targets select the left and right controllers for element 0 and element 1
+24) Now, everything should be just about set, but to be extra careful, go back to the scene hierarchy, select the navmesh --> go to Inspector and clear Navmesh data --> then the Navigation tab --> re-Bake it --> then the Inspector again and re-update the Navmesh Data
+25) Congratulations, you should now be able to test the scene
+26) Press play, and put on the headset (you may be slightly into the floor --> this can be corrected by setting the [CameraRig] transform Y position to 0.1 which raises the player slightly above the cube/plane.
+27) You should be able to see the blue Navmesh
+28) When you hold down the big circle button (on either controller) a parabolic arc should pop up (you'll feel haptic clicks as you move it up and down). An orange/yellow circle should appear at the end of the arc. This represents where you'll teleport to. To teleport, release te big circle button.
